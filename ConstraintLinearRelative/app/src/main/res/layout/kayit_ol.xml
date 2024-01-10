@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Kayıt Ol"
+        android:textSize="23sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:id="@+id/kayit_ol_activity_textViewTitle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+
+    <!-- Yorum satırı böyle yazılır. -->
+
+    <!--Ad ve Soyad Tasarımları -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Ad: "
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="150dp"
+                android:hint="Adınız"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:layout_height="48dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Soyad: "
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="150dp"
+                android:hint="Soyadınız"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:layout_height="48dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Yaş ve Şehir Tasarımları -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Yaş: "
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="150dp"
+                android:hint="Yaşınız"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:layout_height="48dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Şehir: "
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="150dp"
+                android:hint="Şehriniz"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:layout_height="48dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Hobiler Bölümü Tasarımı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="19sp"
+            android:textColor="@color/textColor"
+            android:text="Hobileriniz"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Yazılım"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Oyun"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Yüzme"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Futbol"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Hakkında Bölümü Tasarımı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Hakkında: "
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Hakkınızda bölümü.."
+            android:inputType="textMultiLine"
+            android:textColor="@color/textColor"
+            android:layout_height="48dp"/>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:text="Kayıt Ol"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/buttonBgColor"
+        android:textAllCaps="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="19sp"
+        style="bold"
+        android:layout_height="70dp"/>
+
+</LinearLayout>

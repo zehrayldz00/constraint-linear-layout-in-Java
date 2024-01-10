@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name= "back">#218642</color>
+    <color name="textColor">#000000</color>
+    <color name="textColorHint">#D8CFCF</color>
+    <color name="buttonBgColor">#FF9800</color>
+    <color name="rBgColor">#87A7BD</color>
+    <color name="mesajlasmaTextColor">#000000</color>
+    <color name="mesajlasmaRBgColor">#FFFFFF</color>
+    <color name="mesajlasmaEditBgColor">#D3C5C5</color>
+</resources>
